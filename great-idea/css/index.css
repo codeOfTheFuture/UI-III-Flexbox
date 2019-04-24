@@ -150,6 +150,9 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* General Styles */
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -158,11 +161,12 @@ h5 {
 header {
   height: 50px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
   display: flex;
-  padding: 20px;
 }
 
 header nav ul li a {
@@ -176,26 +180,32 @@ header nav ul li a:hover {
 }
 
 header img {
-  padding: 5px;
+  height: 30px;
+
+  /* padding: 5px; */
 }
 
+/* Home Styles */
+
 .section-1 {
-  height: 500px;
+  height: 400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .section-1 div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin: 0 100px;
 }
 
 .section-1 h1 {
   display: flex;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .section-1 img {
@@ -203,6 +213,7 @@ header img {
 }
 
 .section-1 button {
+  width: 200px;
   padding: 10px 25px;
   background: white;
   border: 1px solid black;
@@ -216,14 +227,14 @@ header img {
 
 .section-2 {
   display: flex;
+  justify-content: space-between;
 }
 
 .section-2 div {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1em;
   line-height: 1.2em;
   margin: 25px 0;
-  padding: 25px;
+  padding: 25px 0;
 }
 
 .middle-img {
@@ -232,15 +243,15 @@ header img {
 
 .section-3 {
   display: flex;
+  justify-content: space-between;
 }
 
 .section-3 div {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1em;
   line-height: 1.2em;
   width: 32%;
   margin: 25px 0;
-  padding: 25px;
+  padding: 25px 0;
 }
 
 .section-4 h2 {
@@ -248,8 +259,7 @@ header img {
 }
 
 .section-4 address {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1em;
   margin: 25px;
   line-height: 2.5em;
 }
@@ -257,4 +267,89 @@ header img {
 footer {
   margin: 50px;
   text-align: center;
+}
+
+/* Services */
+
+.services-header-img {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.services-1 h1 {
+  font-size: 1.5em;
+}
+
+.services-1 div {
+  margin-bottom: 30px;
+}
+
+.services-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-2 div {
+  margin: 30px 0;
+  padding: 20px;
+  height: 250px;
+  width: 325px;
+  border: 1px solid black;
+}
+
+.services-2 div h2 {
+  font-size: 1.1em;
+}
+
+.services-2 div p {
+  margin: 10px 0;
+  line-height: 1.1em;
+}
+
+.services-2 div button {
+  margin: 25px 0;
+  padding: 5px 15px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.services-2 div button:hover {
+  background: black;
+  color: white;
+}
+
+.services-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-3 img {
+  width: 325px;
+  margin: 30px 0;
+}
+
+.services-3 div {
+  width: 325px;
+  margin: 30px 0;
+}
+
+.services-3 div h2 {
+  font-size: 1.1em;
+  /* margin: 10px 0; */
+}
+
+.services-3 div p {
+  line-height: 1.1em;
+}
+
+.services-3 div ul {
+  margin: 20px;
+  line-height: 1.5em;
+}
+
+.services-3 div ul li {
+  list-style: square;
 }
